@@ -6,6 +6,8 @@
 # https://www.php.net/manual/en/random-randomizer.shufflearray.php
 #
 
+use Random\CryptoSafeEngine;
+
 $rand = new \Random\Randomizer(new \Random\Engine\Secure);
 
 echo $rand->getInt(0, 10) . PHP_EOL;
@@ -64,3 +66,25 @@ for ($i = 0; $i < 1000000; $i++) {
 }
 $t3 = microtime(true) - $s3;
 echo "\Random\Engine\PcgOneseq128XslRr64: {$t3}" . PHP_EOL;
+
+#
+# Building a safe randomizer with CryptoSafeEngine interface
+#
+
+class SafeRandomizer
+{
+    private CryptoSafeEngine $engine;
+
+    public function __construct(Random\CryptoSafeEngine $engine)
+    {
+        $this->engine = $engine;
+    }
+
+    public function generate()
+    {
+        return unpack("n", $this->engine->generate())[1];
+    }
+}
+
+$safeRandomizer = new SafeRandomizer(new Random\Engine\Secure);
+echo $safeRandomizer->generate() . PHP_EOL;
