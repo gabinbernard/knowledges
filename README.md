@@ -8,7 +8,8 @@ The main goal for me is to constantly learn more advanced knowledge in order to 
 
 -  [`PHP`](./PHP) 
     - [`json.php`](./PHP/json.php) - *JSON related commands, JsonSterializable interface*
-    - [`printing.php`](./PHP/printing.md) - *Printing functions and formatting*
+    - [`password_hashing.php`](./PHP/password_hashing.php) - *Password hashing functions and constants*
+    - [`printing.php`](./PHP/printing.php) - *Printing functions and formatting*
     - [`psr.md`](./PHP/psr.md) - *PHP Standard Recommandations*
     - [`random.php`](./PHP/random.php) - *Random core extension, Mersenne Twister implementation*
     - [`randomizer.php`](./PHP/randomizer.php) - *Randomizer, RandomEngine implementations*
