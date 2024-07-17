@@ -6,7 +6,11 @@ The main goal for me is to constantly learn more advanced knowledge in order to 
 
 ## Table of contents
 
--  [`PHP`](./PHP) 
+
+- [`GIT`](./GIT) 
+    - [`.gitconfig`](./GIT/.gitconfig) - *Helpful git configuration*
+    - [`git.md`](./GIT/git.md) - *General and useful git commands*
+- [`PHP`](./PHP) 
     - [`json.php`](./PHP/json.php) - *JSON related commands, JsonSterializable interface*
     - [`password_hashing.php`](./PHP/password_hashing.php) - *Password hashing functions and constants*
     - [`printing.php`](./PHP/printing.php) - *Printing functions and formatting*
@@ -15,4 +19,4 @@ The main goal for me is to constantly learn more advanced knowledge in order to 
     - [`randomizer.php`](./PHP/randomizer.php) - *Randomizer, RandomEngine implementations*
     - [`whats-new-in`](./PHP/whats-new) 
         - [`php_8_3.php`](./PHP/whats-new-in/php_8_3.php) - *What's new in PHP 8.3*
--  [`README.md`](./README.md) 
+- [`README.md`](./README.md) 
