@@ -7,6 +7,8 @@ The main goal for me is to constantly learn more advanced knowledge in order to 
 
 ## Table of contents
 
+- [`BASH`](./BASH/)
+    - [`.bashrc`](./BASH/.bashrc) - *My .bashrc configuration*
 - [`GIT`](./GIT) 
     - [`.gitconfig`](./GIT/.gitconfig) - *Helpful git configuration*
     - [`git.md`](./GIT/git.md) - *General and useful git commands*
